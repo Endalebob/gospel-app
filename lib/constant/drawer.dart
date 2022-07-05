@@ -2,6 +2,8 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 
+import '../gospel/home.dart';
+
 class DrawerExtends extends StatelessWidget {
   // const DrawerExtends({this.color});
 
@@ -27,8 +29,8 @@ class DrawerExtends extends StatelessWidget {
                   children: [
                     ClipRRect(
                       borderRadius: BorderRadius.circular(15),
-                      child: Image.file(
-                        File('C:/Users/Endale/Pictures/jes.jpg'),
+                      child: Image.asset(
+                        'assets/jes.jpg',
                         width: 277,
                         height: 130,
                         fit: BoxFit.cover,
@@ -46,6 +48,13 @@ class DrawerExtends extends StatelessWidget {
             leading: Icon(Icons.home_filled),
             title: Text("HOME"),
             onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => Home(),
+                ),
+              );
+
               // context.go('/');
             },
           ),

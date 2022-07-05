@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:gospel/constant/drawer.dart';
 import 'package:gospel/constant/menuButton.dart';
@@ -22,27 +20,10 @@ class Home extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              // Container(
-              //   height: 100,
-              //   color: Color.fromARGB(255, 29, 89, 192),
-              //   child: Center(
-              //     child: Text(
-              //       "GOSPEL",
-              //       style: TextStyle(
-              //         color: Colors.white,
-              //         fontWeight: FontWeight.bold,
-              //         fontSize: 25,
-              //       ),
-              //     ),
-              //   ),
-              // ),
-              // SizedBox(
-              //   height: 5,
-              // ),
               Container(
                 padding: EdgeInsets.all(5),
-                child: Image.file(
-                  File('C:/Users/Endale/Pictures/bible.jpg'),
+                child: Image.asset(
+                  'assets/bible.jpg',
                 ),
               ),
               SizedBox(
@@ -50,28 +31,61 @@ class Home extends StatelessWidget {
               ),
               RoundedButton(
                 onPressed: () {
-                  
+                  Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (BuildContext context) => Home(),
+                ),
+              );
                 },
                 text: "What is Gospel",
                 color: _color,
               ),
               RoundedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => Home(),
+                    ),
+                  );
+                },
                 text: "Kingdom of God",
                 color: _color,
               ),
               RoundedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => Home(),
+                    ),
+                  );
+                },
                 text: "Jesus Christ",
                 color: _color,
               ),
               RoundedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => Home(),
+                    ),
+                  );
+                },
                 text: "Sin",
                 color: _color,
               ),
               RoundedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => Home(),
+                    ),
+                  );
+                },
                 text: "Justice",
                 color: _color,
               ),
