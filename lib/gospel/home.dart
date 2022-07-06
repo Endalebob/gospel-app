@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:gospel/constant/drawer.dart';
 import 'package:gospel/constant/menuButton.dart';
+import 'package:gospel/gospel/detail/kingdom.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
-  final Color _color = Colors.black;
+  final Color _color = Colors.deepPurple;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 102, 100, 101),
+      backgroundColor: Colors.black,
       drawer: DrawerExtends(),
       appBar: AppBar(
         title: Text("GOSPEL"),
@@ -32,11 +33,11 @@ class Home extends StatelessWidget {
               RoundedButton(
                 onPressed: () {
                   Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (BuildContext context) => Home(),
-                ),
-              );
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) => Home(),
+                    ),
+                  );
                 },
                 text: "What is Gospel",
                 color: _color,
@@ -46,7 +47,7 @@ class Home extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (BuildContext context) => Home(),
+                      builder: (BuildContext context) => Kingdom(),
                     ),
                   );
                 },
@@ -58,7 +59,7 @@ class Home extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (BuildContext context) => Home(),
+                      builder: (BuildContext context) => Kingdom(),
                     ),
                   );
                 },
