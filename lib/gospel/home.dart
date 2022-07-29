@@ -44,12 +44,13 @@ class Home extends StatelessWidget {
               ),
               RoundedButton(
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (BuildContext context) => Kingdom(),
-                    ),
-                  );
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (BuildContext context) => Kingdom(),
+                  //   ),
+                  // );
+                  Navigator.pushNamed(context, '/kigdom');
                 },
                 text: "Kingdom of God",
                 color: _color,

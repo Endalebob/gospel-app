@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gospel/gospel/detail/kingdom.dart';
 import 'package:gospel/gospel/home.dart';
 
 void main() {
@@ -14,7 +15,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: Home(),
+      initialRoute: '/',
+     routes: {
+       '/': (context) => Home(),
+       '/kigdom': (context) => Kingdom()
+     },
     );
   }
 }
